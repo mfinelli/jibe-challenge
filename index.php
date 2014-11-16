@@ -11,8 +11,8 @@
 </head>
 <body>
 
-<div class="row">
-    <div class="large-12 columns">
+<div class="row" style="margin-top: 1rem;">
+    <div class="large-10 columns">
         <dl class="sub-nav">
             <dt>Filter:</dt>
             <dd id="filter_status">Disabled Until All Images Downloaded</dd>
@@ -24,6 +24,9 @@
             <dt id="status_label">Status:</dt>
             <dd id="status">Gathering Information</dd>
         </dl>
+    </div>
+    <div class="large-2 columns">
+        <a href="?flickr_modify=2" class="button radius tiny">2 Months flickr</a>
     </div>
 </div>
 
