@@ -91,11 +91,23 @@ while (!is_null($url)) {
                     // included in our final array.
                     unset($data['data'][$i]);
 
-                    $stopped = true;
+                    // It would seem that within the last day, that this does
+                    // not return images in the right order, so we can't rely
+                    // on this to work properly. Just fetch everything and
+                    // remove what we don't want. Not as efficient as we would
+                    // like but it does the job.
+                    // $stopped = true;
 
                 }
 
             }
+        }
+
+        // If we got zero results (e.g., we removed all of them) then we'll
+        // assume that we're past the cutoff date and set stopped. (instead of
+        // checking by date.)
+        if (!count($data['data'])) {
+            $stopped = true;
         }
 
         // Add the resultset to our final array of images.
