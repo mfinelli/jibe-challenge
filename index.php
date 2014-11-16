@@ -208,7 +208,7 @@ $(document).foundation().ready(function () {
                 $('#photostream').append(
                     '<li id="comments-' + comments +
                     '" class="flickr_img" data-comments="' + comments +
-                    '">' + img_div + '</li>');
+                    '">' + img_div + info + '</li>');
                 lowest_inserted = comments;
 
             } else {
@@ -223,7 +223,7 @@ $(document).foundation().ready(function () {
                     $(last).before(
                         '<li id="comments-' + comments +
                         '" class="flickr_img" data-comments="' + comments +
-                        '">' + img_div + '</li>');
+                        '">' + img_div + info + '</li>');
 
                 } else {
 
