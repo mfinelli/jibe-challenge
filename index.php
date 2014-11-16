@@ -261,6 +261,16 @@ $(document).foundation().ready(function () {
 
     });
 
+    // If there aren't any flickr images then just update the status bar.
+    if (flickr_photos.length == 0) {
+        $('#status_label').hide();
+        $('#status').hide();
+        $('#filter_status').hide();
+        $('#filter_all').removeClass("hide");
+        $('#filter_instagram').removeClass("hide");
+        $('#filter_flickr').removeClass("hide");
+    }
+
 });
 
 </script>
