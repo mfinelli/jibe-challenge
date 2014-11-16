@@ -163,8 +163,11 @@ $(document).foundation().ready(function () {
 
     });
 
-    // Start Flickr
-    //TODO write about flickr process
+    // Start flickr. This is almost identical to Instagram, except we need to
+    // make an AJAX call to fetch information (specifically how many comments
+    // it has) before we can sort it into order. The only other difference is
+    // that we update the status bar as we go along, and then unmute the
+    // buttons when we're done.
 
     // We use this variable to update the status bar.
     var remaining = flickr_photos.length;
