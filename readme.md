@@ -34,3 +34,9 @@ While all 3rd party code is packaged along with the challenge code, it is also l
 * [Foundation 5.4.7](http://foundation.zurb.com/) - CSS framework used to style the challenge.
 * [jQuery 2.1.1](https://jquery.com/) - Bundled along with Foundation, used to make AJAX calls and manipulate the DOM.
 * [phpFlickr (master)](https://github.com/dan-coulter/phpflickr) - Library used to make API calls to flickr's endpoints. We use master instead of a stable version for commit [b5955ce](https://github.com/dan-coulter/phpflickr/commit/b5955ce81fb505221bcb18b8ff54b67cd8ddebdf) which introduced JSON as the return format.
+
+"Building from Source"
+----------------------
+When cloning the source of this repo, be sure to pass a `--recursive` flag in order to fetch the submodules. If you forget, run:
+
+    $ git submodule update --init
