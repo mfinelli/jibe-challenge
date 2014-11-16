@@ -61,7 +61,7 @@ $(document).foundation().ready(function () {
         $('#filter_all').addClass('active');
         $('#filter_instagram').removeClass('active');
         $('#filter_flickr').removeClass('active');
-        $(".instagram_img").show();
+        $('.instagram_img').show();
         $('.flickr_img').show();
         return false;
     });
