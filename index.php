@@ -30,7 +30,8 @@
 <div class="row">
     <div class="large-12 columns">
         <div class="panel" id="response">
-            <ul id="photostream" class="large-block-grid-4"></ul>
+            <ul id="photostream" class="large-block-grid-4 medium-block-grid-3
+            small-block-grid-2"></ul>
         </div>
     </div>
 </div>
